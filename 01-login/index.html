@@ -93,7 +93,7 @@
                       <i class="fas fa-user mr-3"></i> Profile
                     </a>
                     <!-- Navigate to API Call page-->
-                    <a href="/02-Calling-an-API/index.html" class="nav-link route-link"> Tenants </a>
+                    <a href="/02-Calling-an-API/index.html" class="dropdown-item dropdown-profile route-link"> <i class="fas fa-user mr-3">Tenants </i> </a>
                     <a
                       href="#"
                       class="dropdown-item"
@@ -247,6 +247,30 @@
                   customize and extend Auth0's capabilities.
                 </p>
               </div>
+
+              <div class="page" id="content-external-api">
+                <h1>External API</h1>
+                <p>
+                  Ping an external API by clicking the button below. This will call
+                  the external API using an access token, and the API will validate it
+                  using the API's audience value.
+                </p>
+      
+                <p class="mb-5">
+                  <a href="https://dev-kad4txwg.us.auth0.com/api/v2/clients?fields=tenant%2Cname&include_fields=true&include_totals=true" class="btn btn-primary mt-5" id="call-api">Ping API</a>
+                </p>
+      
+                <div class="result-block-container">
+                  <div class="result-block reset-on-nav">
+                    <h6 class="muted">Result</h6>
+                    <pre>
+                      <code class="js rounded" id="api-call-result">JSON.stringify(apiMessage, null, 2)</code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
             </div>
           </div>
         </div>

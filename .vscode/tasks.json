@@ -12,6 +12,16 @@
 				"kind": "build",
 				"isDefault": true
 			}
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "01-login",
+			"problemMatcher": [
+				"$eslint-compact"
+			],
+			"label": "npm: start - 01-login",
+			"detail": "node bin/www"
 		}
 	]
 }
