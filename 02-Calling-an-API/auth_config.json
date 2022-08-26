@@ -2,7 +2,5 @@
   "domain": "dev-dyur1scc.us.auth0.com",
   "clientId": "TLG2r5ZRjg0Lh9S3ioTObFq5Ts495kXZ",
     "audience": "https://dev-dyur1scc.us.auth0.com/api/v2"
-  }
-  // "id": "auth0%7C62ff9f57ee024a53e2af6670",
-  // "audience": "https://dev-dyur1scc.us.auth0.com/api/v2/users/{id}/roles"
+
 }
