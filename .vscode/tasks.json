@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "02-Calling-an-API",
+			"problemMatcher": [],
+			"label": "npm: start - 02-Calling-an-API",
+			"detail": "node bin/www",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

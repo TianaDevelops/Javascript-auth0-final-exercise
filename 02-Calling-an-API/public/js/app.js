@@ -77,7 +77,7 @@ const callApi = async () => {
   try {
     const token = await auth0.getTokenSilently();
 
-    const response = await fetch("/api/external", {
+    const response = await fetch("/api/v2/clients", {
       headers: {
         Authorization: `Bearer ${token}`
       }
