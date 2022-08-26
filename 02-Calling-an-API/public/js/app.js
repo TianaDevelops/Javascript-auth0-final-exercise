@@ -77,7 +77,7 @@ const callApi = async () => {
   try {
     const token = await auth0.getTokenSilently();
 
-    const response = await fetch("/api/v2/clients", {
+    const response = await fetch("/api/v2/clients?fields=tenant%2Cname&include_fields=true&include_totals=true", {
       headers: {
         Authorization: `Bearer ${token}`
       }
