@@ -22,6 +22,41 @@ $ npm run dev
 
 Open the application in the browser at [http://localhost:3000](http://localhost:3000).
 
+
+## Setting up your API
+
+Open the APIs in the browser at [https://manage.auth0.com/dashboard/us/dev-dyur1scc/apis/630e09eb2899e980083ce7c3/quickstart]
+1. Choose a JWT library
+As your API will be parsing JWT formatted access tokens, you will need to setup these capabilities on your API.
+
+You can navigate to jwt.io and choose from there. Remember to pick a library that support your selected signing algorithm.
+
+2. Configuring your API to accept RS256 signed tokens
+
+Configure the library that will validate the access tokens in your API. Validating a token means that you are certain you can trust its contents.
+
+## Restricting Access to Managers Only - Using RBAC
+3. Define Permissions and manage Authorization Policies
+On the Permissions tab, you can define what scopes this API may accept. 
+
+On the Settings tab, enable Authorization Policy Enforcement for your API. If enabled, only Roles and Permissions assigned to your user will be included in the token.
+
+That's it!
+
+## Adding the API to your application
+Go to your Auth0 dashbaord and go to the Application
+
+Click the API tab and add slide over the slider to Authorize your new API to access this application.
+
+
+## Setting up/confirming Manager Access
+Go to your Auth0 dashbaord and go to User Management > Roles
+
+Create a role called "Manager"
+
+## Adding Managers to role
+Switch to the Users tab and click Add Users
+
 ## Frequently Asked Questions
 
 We are compiling a list of questions and answers regarding the new JavaScript SDK - if you're having issues running the sample applications, [check the FAQ](https://github.com/auth0/auth0-spa-js/blob/master/FAQ.md)!

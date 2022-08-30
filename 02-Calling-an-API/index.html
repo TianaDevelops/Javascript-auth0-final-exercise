@@ -2,7 +2,7 @@
 <html class="h-100">
   <head>
     <meta charset="UTF-8" />
-    <title>SPA SDK Sample</title>
+    <title>Test Project</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -177,15 +177,20 @@
               alt="JavaScript logo"
               width="75"
             />
-            <h1 class="mb-4">JavaScript Sample Project</h1>
+            <h1 class="mb-4">Charlies Test Company</h1>
 
-            <p class="lead">
-              This is a sample application that demonstrates an authentication
-              flow for an SPA, using plain JavaScript
-            </p>
+            <h3 class="lead">
+              Welcome Managers! 
+            </h3>
+            <h5 class="lead">
+              Please find the button below to view the applications within the business.
+            </h5>
+            <a class="btn btn-primary mt-5" id="call-api">Check Tenants</a>
+
+            
           </div>
 
-          <div class="next-steps">
+          <!-- <div class="next-steps">
             <h2 class="my-5 text-center">What can I do next?</h2>
 
             <div class="row">
@@ -253,7 +258,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="page" id="content-profile">
@@ -283,19 +288,7 @@
           <div id="main-content" class="container mt-5 flex-grow-1">
             <div id="content-home" class="page">
               <div class="text-center hero">
-                <h1 class="mb-4">Welcome Managers </h1>
-                <h2> Please find the button below to view the applications within the orginization.</h2>
     
-                <p class="lead">
-                  You will also find the Action and Trigers associated with each. 
-    
-                  Hope this helps :)
-                  
-                  - Managent
-
-                    <a class="btn btn-primary mt-5" id="call-api">Check Tenants</a>
-                  
-                </p>
               </div>
             </div>  
     
@@ -304,7 +297,7 @@
 
           <div class="result-block-container">
             <div class="result-block reset-on-nav">
-              <h6 class="muted">Result</h6>
+              <h6 class="muted">Applications</h6>
               <pre>
                 <code class="js rounded" id="api-call-result">JSON.stringify(apiMessage, null, 2)</code>
               </pre>
